@@ -21,6 +21,7 @@ jobs:
 
           # Intel IFX.
           - {os: ubuntu-latest, compiler: ifx, extra-packages: "mkl mkl-devel mkl-static mkl-include"}
+          - {os: windows-latest, compiler: ifx, extra-packages: "mkl mkl-devel mkl-static mkl-include", fpm-version: "0.12.0"}
           # - {os: windows-latest, compiler: ifx, extra-packages: "pkg-config mkl ", fpm-version: "0.12.0"}  # Cannot find mkl_intel_lp64.lib
 
           # Other compilers.
