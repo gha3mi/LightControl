@@ -3,7 +3,7 @@ name: ci
 on: [push, pull_request]
 
 jobs:
-  test:
+  test_fpm:
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
